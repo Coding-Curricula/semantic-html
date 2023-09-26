@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Semantic HTML</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>My Semantic Website</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/#home" aria-label="Home Link">Home</a></li>
+        <li><a href="/#about">About Me</a></li>
+        <li><a href="/#gallery">Gallery</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <h2>Home</h2>
+      <p>This is the home section.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>This is the about me section.</p>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <img
+        src="https://source.unsplash.com/random/rock"
+        alt="rock image"
+        width="100"
+        height="100"
+      />
+      <img
+        src="https://source.unsplash.com/random/sand"
+        alt="sand image"
+        width="100"
+        height="100"
+      />
+      <img
+        src="https://source.unsplash.com/random/ocean"
+        alt="ocean image"
+        width="100"
+        height="100"
+      />
+      <img
+        src="https://source.unsplash.com/random/sky"
+        alt="image of the sky"
+        width="100"
+        height="100"
+      />
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your crazy name"
+          required
+        />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br />
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+        <br />
+        <input type="submit" value="Submit" aria-label="Submit Button" />
+      </form>
+    </section>
+  </body>
 </html>

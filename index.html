@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Semantic HTML</title>
   </head>
   <body>
@@ -21,7 +22,15 @@
 
     <section id="home">
       <h2>Home</h2>
-      <p>This is the home section.</p>
+      <p>
+        <a
+          href="https://www.google.com"
+          class="styled-button"
+          target="_blank"
+          rel="noopener noreferrer"
+          >CLICK ME</a
+        >
+      </p>
     </section>
 
     <section id="about">
@@ -89,5 +98,9 @@
         <input type="submit" value="Submit" aria-label="Submit Button" />
       </form>
     </section>
+
+    <div class="rounded-image">
+      <span class="centered-text">Your Text Here</span>
+    </div>
   </body>
 </html>
